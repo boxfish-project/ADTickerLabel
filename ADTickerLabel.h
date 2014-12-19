@@ -54,8 +54,6 @@ typedef enum{
  */
 @property (nonatomic, unsafe_unretained) UITextAlignment textAlignment;
 
-@property (nonatomic, unsafe_unretained) BOOL needAdjustPositionY;
-
 - (void)setText:(NSString *)text animated:(BOOL)animated;
 
 @end
