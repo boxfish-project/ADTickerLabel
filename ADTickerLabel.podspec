@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/Antondomashnev"
   s.author       = { 'Anton Domashnev' => 'antondomashnev@gmail.com' }
-  s.source       = { :git => "https://github.com/Antondomashnev/ADTickerLabel.git", :tag => s.version.to_s}
+  s.source       = { :git => "https://github.com/boxfish-project/ADTickerLabel", :tag => s.version.to_s}
   s.platform     = :ios
   s.source_files = '*.{h,m}'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
