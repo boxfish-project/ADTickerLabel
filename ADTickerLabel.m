@@ -63,8 +63,13 @@
 }
 
 - (CGFloat)positionYForCharacterAtIndex:(NSInteger)index{
+    CGFloat positionY = -index * (self.textLabel.frame.size.height / [self.charactersArray count]);
     
-    return -index * (self.textLabel.frame.size.height / [self.charactersArray count]);
+    if (self.needAdjustPositionY) {
+        positionY -= (self.textLabel.frame.size.height / [self.charactersArray count]) / 2;
+    }
+    
+    return positionY;
 }
 
 - (void)animateToPositionY:(CGFloat)positionY withCallback:(void(^)(void))callback{
